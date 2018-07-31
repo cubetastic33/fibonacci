@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Fibonacci Series</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<header class="mdc-top-app-bar">
+		<div class="mdc-top-app-bar__row">
+			<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+				<span class="mdc-top-app-bar__title">Fibonacci Series</span>
+			</section>
+		</div>
+	</header>
+	<div id="division">
+		<h1>Fibonacci Calculator</h1>
+		<p>F<sub>n</sub> = F<sub>n-2</sub> + F<sub>n-1</sub></p>
+		<form id="fibonacciForm">
+			<div id="f0" class="mdc-text-field mdc-text-field--outlined mdc-text-field--upgraded">
+				<input type="number" id="startFrom" class="mdc-text-field__input" min="0" max="200" value="0">
+				<label class="mdc-floating-label mdc-floating-label--float-above" for="startFrom">F0 (First number)</label>
+				<div class="mdc-notched-outline">
+					<svg>
+						<path class="mdc-notched-outline__path"/>
+					</svg>
+				</div>
+				<div class="mdc-notched-outline__idle"></div>
+			</div>
+			<div id="f1" class="mdc-text-field mdc-text-field--outlined mdc-text-field--upgraded">
+				<input type="number" id="endAt" class="mdc-text-field__input" min="1" max="250" value="1">
+				<label class="mdc-floating-label mdc-floating-label--float-above" for="endAt">F1 (Second number)</label>
+				<div class="mdc-notched-outline">
+					<svg>
+						<path class="mdc-notched-outline__path"/>
+					</svg>
+				</div>
+				<div class="mdc-notched-outline__idle"></div>
+			</div>
+			<div id="numberOfValues" class="mdc-text-field mdc-text-field--outlined mdc-text-field--upgraded">
+				<input type="number" id="numberOfValuesInput" class="mdc-text-field__input" min="2" max="100" value="10">
+				<label class="mdc-floating-label mdc-floating-label--float-above" for="numberOfValuesInput">Number Of Values</label>
+				<div class="mdc-notched-outline">
+					<svg>
+						<path class="mdc-notched-outline__path"/>
+					</svg>
+				</div>
+				<div class="mdc-notched-outline__idle"></div>
+			</div>
+			<button class="mdc-button mdc-button--raised">Tell me!</button>
+		</form>
+		<div id="result"></div>
+	</div>
+	<footer>
+		Program to calculate Fibonacci Series of numbers. Created by <a href="https://cubetastic.herokuapp.com">cubetastic</a>.
+		<div>
+			© 2018 | Cubetastic
+		</div>
+	</footer>
+</body>
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<script src="main.js"></script>
+</html>
